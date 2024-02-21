@@ -80,7 +80,3 @@ Feel free to contribute and enhance this project further! If you have any questi
 ![Deployment](results/4.gif)
 
 ![Deployment](results/3.gif)
-
----
-
-Replace the placeholder GIFs with actual screenshots or recordings of your application's deployment and functionality in action. If you encounter any issues or need further assistance, don't hesitate to ask!

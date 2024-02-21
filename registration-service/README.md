@@ -41,5 +41,3 @@ This is a simple registration service API built using Spring Boot for managing u
 ### Note
 
 - This is a basic implementation and can be extended with additional features like authentication, validation, etc., as per requirements.
-
-Feel free to contribute and enhance this service further! If you have any questions or suggestions, please feel free to reach out.
