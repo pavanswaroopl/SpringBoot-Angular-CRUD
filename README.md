@@ -1,27 +1,86 @@
-# UserRegistrationClient
+# Full Stack User Registration Application Deployment on AWS
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+This project is a full-stack user registration application deployed on Amazon Web Services (AWS). It consists of a backend Spring Boot API for managing user registrations and a frontend Angular application for user interaction.
 
-## Development server
+## Backend: Registration Service API
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The Registration Service API is a Spring Boot application responsible for handling user registrations. It provides various endpoints for registering users, retrieving user information, and canceling registrations.
 
-## Code scaffolding
+### Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **User Registration**: Allows users to register by providing their name, email, experience, and domain.
+- **Retrieve All Users**: Retrieves a list of all registered users.
+- **Find User by Email**: Searches for a user by their email address.
+- **Cancel Registration**: Cancels the registration of a user by their ID.
 
-## Build
+### Endpoints
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- `POST /register`: Register a new user.
+- `GET /getAllUsers`: Retrieve all registered users.
+- `GET /findUser/{email}`: Find a user by email.
+- `DELETE /cancel/{id}`: Cancel the registration of a user by ID.
 
-## Running unit tests
+### Technologies Used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Spring Boot**: For building and managing the RESTful API.
+- **Spring Data JPA**: For interaction with the MySQL database.
+- **Lombok**: For reducing boilerplate code in model classes.
+- **MySQL**: As the database to store user information.
 
-## Running end-to-end tests
+### Deployment on AWS
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+1. **Backend Deployment**:
+   - Utilized Amazon RDS for creating a MySQL instance to store user data.
+   - Deployed the backend Spring Boot application on Elastic Beanstalk (EBS) using an EC2 instance.
 
-## Further help
+## Frontend: User Registration Client
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+The User Registration Client is an Angular application that provides a user-friendly interface for interacting with the registration service.
+
+### Deployment on AWS
+
+2. **Frontend Deployment**:
+   - Hosted the frontend Angular application on Amazon S3 for static web hosting.
+
+## Setup
+
+1. **Backend Configuration**:
+   - Configure the `application.properties` file in the backend with your Amazon RDS MySQL database credentials.
+
+2. **Build and Run**:
+   - Run the backend Spring Boot application on Elastic Beanstalk.
+
+3. **Frontend Configuration**:
+   - Ensure the frontend Angular application is configured to communicate with the deployed backend API endpoints.
+
+4. **Build and Deploy**:
+   - Build the frontend Angular application using `ng build` and deploy the generated files to Amazon S3.
+
+## Usage
+
+- Access the deployed frontend application by navigating to the provided Amazon S3 URL.
+- Interact with the user registration features provided by the frontend application.
+- Monitor backend operations and database interactions through the deployed Spring Boot application on Elastic Beanstalk.
+
+## Note
+
+- This deployment serves as a demonstration of deploying a full-stack application on AWS.
+- Additional features like authentication, validation, etc., can be implemented as per requirements.
+
+Feel free to contribute and enhance this project further! If you have any questions or suggestions, please feel free to reach out.
+
+---
+
+## Deployment Results
+
+![Deployment](results/1.gif)
+
+![Deployment](results/2.gif)
+
+![Deployment](results/4.gif)
+
+![Deployment](results/3.gif)
+
+---
+
+Replace the placeholder GIFs with actual screenshots or recordings of your application's deployment and functionality in action. If you encounter any issues or need further assistance, don't hesitate to ask!
