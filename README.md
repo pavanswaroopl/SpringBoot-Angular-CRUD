@@ -74,12 +74,12 @@ Feel free to contribute and enhance this project further! If you have any questi
 ## Deployment Results
 
 <!-- ![Deployment](results/1.gif) -->
-<img src="results/1.gif" width="600" height="400">
+<img src="results/result1.gif" width="600" height="400">
 <!-- ![Deployment](results/2.gif) -->
-<img src="results/2.gif" width="600" height="400">
+<img src="results/result2.gif" width="600" height="400">
 <!-- ![Deployment](results/4.gif) -->
-<img src="results/4.gif" width="600" height="400">
+<img src="results/result3.gif" width="600" height="400">
 <!-- ![Deployment](results/3.gif) -->
-<img src="results/3.gif" width="600" height="400">
+<img src="results/result4.gif" width="600" height="400">
 
 Thanks !
